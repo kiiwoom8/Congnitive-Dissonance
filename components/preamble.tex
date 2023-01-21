@@ -1,0 +1,23 @@
+\documentclass[10pt, a4paper]{article}
+
+\usepackage{tikz, incgraph, hyperref}
+\tikzset{
+    default/.append style={
+            draw,
+            rectangle,
+            rounded corners,
+            minimum width=2cm,
+            minimum height=1cm
+        },
+    default_arrow/.append style={
+            -latex,
+            shorten >=5pt,
+            shorten <=5pt,
+        },
+    text_on_line_l/.style n args={1}{
+            postaction={decorate, decoration={text along path, text align=center, reverse path, raise=2pt, text={#1}}}
+        },
+    text_on_line_r/.style n args={1}{
+            postaction={decorate, decoration={text along path, text align=center, raise=2pt, text={#1}}}
+        }
+}
