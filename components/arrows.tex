@@ -1,3 +1,4 @@
-\draw[default_arrow, text_on_line_l={Select}](root.west) to (litem);
-\draw[default_arrow, text_on_line_r={Devaluate}](root.east) to (ritem);
+\draw[default_arrow, text_on_line_l={Select}](cd.west) to (litem);
+\draw[default_arrow, text_on_line_r={Devaluate}](cd.east) to (ritem);
 \draw[default_arrow, latex-latex, text_on_line_r={Equal Value}](litem) to (ritem);
+\draw[default_arrow](pmfc) to node[right]{detect, reduce} (cd);
